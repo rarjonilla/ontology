@@ -10,6 +10,7 @@
      xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
      xmlns:spain-wine-ontology="http://www.semanticweb.org/roko/ontologies/2023/3/spain-wine-ontology#">
     <owl:Ontology rdf:about="http://www.semanticweb.org/roko/ontologies/2023/3/spain-wine-ontology">
+        <owl:versionIRI rdf:resource="http://www.semanticweb.org/roko/ontologies/2023/3/spain-wine-ontology/1.0.0"/>
         <rdfs:comment xml:lang="ca">Ontología de vins d&apos;Espanya creada per a la PAC 2 de l&apos;assignatura &quot;Representament del coneixement&quot;</rdfs:comment>
         <rdfs:creator>Rubén Arjonilla Zamora (rarjonilla)</rdfs:creator>
         <rdfs:label>Ontología de vins d&apos;Espanya</rdfs:label>
