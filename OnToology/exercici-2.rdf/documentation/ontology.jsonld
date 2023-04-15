@@ -1198,6 +1198,9 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Ontología de vins d'Espanya"
   } ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@id" : "http://www.semanticweb.org/roko/ontologies/2023/3/spain-wine-ontology/1.0.0"
+  } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
     "@value" : "1.0"
