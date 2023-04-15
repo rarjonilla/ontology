@@ -7,6 +7,7 @@
 @base <http://www.semanticweb.org/roko/ontologies/2023/3/spain-wine-ontology#> .
 
 <http://www.semanticweb.org/roko/ontologies/2023/3/spain-wine-ontology> rdf:type owl:Ontology ;
+                                                                         owl:versionIRI <http://www.semanticweb.org/roko/ontologies/2023/3/spain-wine-ontology/1.0.0> ;
                                                                          rdfs:comment "Ontología de vins d'Espanya creada per a la PAC 2 de l'assignatura \"Representament del coneixement\""@ca ;
                                                                          rdfs:creator "Rubén Arjonilla Zamora (rarjonilla)" ;
                                                                          rdfs:label "Ontología de vins d'Espanya" ;

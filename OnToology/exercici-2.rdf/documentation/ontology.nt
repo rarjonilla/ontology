@@ -1,4 +1,5 @@
 <http://www.semanticweb.org/roko/ontologies/2023/3/spain-wine-ontology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.semanticweb.org/roko/ontologies/2023/3/spain-wine-ontology> <http://www.w3.org/2002/07/owl#versionIRI> <http://www.semanticweb.org/roko/ontologies/2023/3/spain-wine-ontology/1.0.0> .
 <http://www.semanticweb.org/roko/ontologies/2023/3/spain-wine-ontology> <http://www.w3.org/2000/01/rdf-schema#comment> "Ontología de vins d'Espanya creada per a la PAC 2 de l'assignatura \"Representament del coneixement\""@ca .
 <http://www.semanticweb.org/roko/ontologies/2023/3/spain-wine-ontology> <http://www.w3.org/2000/01/rdf-schema#creator> "Rubén Arjonilla Zamora (rarjonilla)" .
 <http://www.semanticweb.org/roko/ontologies/2023/3/spain-wine-ontology> <http://www.w3.org/2000/01/rdf-schema#label> "Ontología de vins d'Espanya" .
