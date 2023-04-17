@@ -1,0 +1,2944 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://w3id.org/def/spanish-wine-ontology-rarjonilla#"
+     xml:base="https://w3id.org/def/spanish-wine-ontology-rarjonilla"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:spainWine="https://w3id.org/def/spanish-wine-ontology-rarjonilla">
+    <owl:Ontology rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla">
+        <owl:versionIRI rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla/1.0.0"/>
+        <dc:creator>Rubén Arjonilla Zamora (rarjonilla)</dc:creator>
+        <dc:description>Ontología de vins d&apos;Espanya creada per a la PAC 2 de l&apos;assignatura &quot;Representament del coneixement&quot;</dc:description>
+        <dc:publisher>Rubén Arjonilla Zamora (rarjonilla)</dc:publisher>
+        <dc:rights>https://creativecommons.org/licenses/by/3.0/</dc:rights>
+        <dc:title>Spain Wines ontology</dc:title>
+        <rdfs:comment xml:lang="ca">Ontología de vins d&apos;Espanya creada per a la PAC 2 de l&apos;assignatura &quot;Representament del coneixement&quot;</rdfs:comment>
+        <rdfs:creationDate>2023-04-04T22:00:00</rdfs:creationDate>
+        <rdfs:label>Ontología de vins d&apos;Espanya</rdfs:label>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/author -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/author"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creationDate -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creationDate"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/license -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/license"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/publisher -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/publisher"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/rights -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/rights"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#author -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#author"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#creationDate -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#creationDate"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#creator -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#creator"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#sameAs -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#sameAs"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#title -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#title"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#gYear -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#gYear"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#grape_used_for -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#grape_used_for">
+        <owl:inverseOf rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#has_grape"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Grape"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Wine"/>
+        <rdfs:comment xml:lang="ca">Relació de vins el·laborats amb una varietat de raïm</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#has_grape -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#has_grape">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Wine"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Grape"/>
+        <rdfs:comment xml:lang="ca">Varietat de raïm amb la que s&apos;ha el·laborat el vi</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#has_vintage_year -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#has_vintage_year">
+        <owl:inverseOf rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#vintages_of_year"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Vintage"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Vintage_year"/>
+        <rdfs:comment>Relació entre l&apos;anyada d&apos;un vi i l&apos;any d&apos;el·laboració</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#has_wineries -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#has_wineries">
+        <owl:inverseOf rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#is_region"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Wine_region"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Winery"/>
+        <rdfs:comment>Cellers d&apos;una regió</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#is_region -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#is_region">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Winery"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Wine_region"/>
+        <rdfs:comment xml:lang="ca">Regió d&apos;un celler</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#produced_by -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#produced_by">
+        <owl:inverseOf rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#produces"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Wine"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Winery"/>
+        <rdfs:comment xml:lang="ca">Celler productor d&apos;un vi</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#produces -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#produces">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Winery"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Wine"/>
+        <rdfs:comment xml:lang="ca">Relació de vins produïts per un celler</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#vintage_of -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#vintage_of">
+        <owl:inverseOf rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#vintages"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Vintage"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Wine"/>
+        <rdfs:comment>Relació entre l&apos;anyada d&apos;un vi i el vi</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#vintages -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#vintages">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Wine"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Vintage"/>
+        <rdfs:comment>Anyades d&apos;un vi</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#vintages_of_year -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#vintages_of_year">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Vintage_year"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Vintage"/>
+        <rdfs:comment>Vins el·laborats en una anyada</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#has_acidity -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#has_acidity">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#has_wine_descriptor"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Wine"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</xsd:minInclusive>
+                    </rdf:Description>
+                    <rdf:Description>
+                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</xsd:maxInclusive>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <rdfs:comment xml:lang="ca">Acidesa del vi</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#has_body -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#has_body">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#has_wine_descriptor"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Wine"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</xsd:minInclusive>
+                    </rdf:Description>
+                    <rdf:Description>
+                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">5</xsd:maxInclusive>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <rdfs:comment xml:lang="ca">Cos del vi</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#has_number_reviews -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#has_number_reviews">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#has_vintage"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Vintage"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:comment xml:lang="ca">Nombre d&apos;anàlisis per a l&apos;anyada del vi</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#has_price -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#has_price">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#has_vintage"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Vintage"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:comment xml:lang="ca">Preu per a l&apos;anyada del vi</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#has_rating -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#has_rating">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#has_vintage"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Vintage"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</xsd:minInclusive>
+                    </rdf:Description>
+                    <rdf:Description>
+                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5</xsd:maxInclusive>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <rdfs:comment xml:lang="ca">Valoració per a l&apos;anyada del vi</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#has_vintage -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#has_vintage">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Vintage"/>
+        <rdfs:comment xml:lang="ca">Anyada d&apos;un vi</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#has_wine_descriptor -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#has_wine_descriptor">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Wine"/>
+        <rdfs:comment xml:lang="ca">Propietats del vi</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#year_value -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#year_value">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Vintage_year"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#gYear"/>
+        <rdfs:comment>Any de l&apos;anyada</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#Alcoholic_beberage -->
+
+    <owl:Class rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Alcoholic_beberage">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Beverage"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Non_alcoholic_beberage"/>
+        <rdfs:comment xml:lang="ca">Concepte &quot;Begudes alcohòliques&quot;</rdfs:comment>
+        <rdfs:label xml:lang="ca">Concepte &quot;Begudes alcohòliques&quot;</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#Beer -->
+
+    <owl:Class rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Beer">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Fermentatated_alcoholic_beberage"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Wine"/>
+        <rdfs:comment xml:lang="ca">Concepte &quot;Cervesa&quot;</rdfs:comment>
+        <rdfs:label xml:lang="ca">Concepte &quot;Cervesa&quot;</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#Beverage -->
+
+    <owl:Class rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Beverage">
+        <rdfs:comment xml:lang="ca">Concepte &quot;Begudes&quot;</rdfs:comment>
+        <rdfs:label xml:lang="ca">Concepte &quot;Begudes&quot;</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#Carbonated_beverage -->
+
+    <owl:Class rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Carbonated_beverage">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Non_alcoholic_beberage"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Non_carbonated_beberage"/>
+        <rdfs:comment>Concepte &quot;Begudes carbonatades&quot;</rdfs:comment>
+        <rdfs:label xml:lang="ca">Concepte &quot;Begudes carbonatades&quot;</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#Country -->
+
+    <owl:Class rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Country">
+        <rdfs:comment xml:lang="ca">Concepte &quot;País&quot;</rdfs:comment>
+        <rdfs:label xml:lang="ca">Concepte &quot;País&quot;</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#Crianza_wine -->
+
+    <owl:Class rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Crianza_wine">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Wine"/>
+        <rdfs:comment xml:lang="ca">Concepte &quot;Vi criança&quot;</rdfs:comment>
+        <rdfs:label xml:lang="ca">Concepte &quot;Vi criança&quot;</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#Destilated_alcoholic_beberage -->
+
+    <owl:Class rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Destilated_alcoholic_beberage">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Alcoholic_beberage"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Fermentatated_alcoholic_beberage"/>
+        <rdfs:comment xml:lang="ca">Concepte &quot;Begudes alcohòliques destilades&quot;</rdfs:comment>
+        <rdfs:label xml:lang="ca">Concepte &quot;Begudes alcohòliques destilades&quot;</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#Fermentatated_alcoholic_beberage -->
+
+    <owl:Class rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Fermentatated_alcoholic_beberage">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Alcoholic_beberage"/>
+        <rdfs:comment xml:lang="ca">Concepte &quot;Begudes alcohòloques fermentades&quot;</rdfs:comment>
+        <rdfs:label xml:lang="ca">Concepte &quot;Begudes alcohòloques fermentades&quot;</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#Fish -->
+
+    <owl:Class rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Fish">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Food"/>
+        <rdfs:comment>Concepte &quot;Peix&quot;</rdfs:comment>
+        <rdfs:label xml:lang="ca">Concepte &quot;Peix&quot;</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#Food -->
+
+    <owl:Class rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Food">
+        <rdfs:comment>Concepte &quot;Aliments&quot;</rdfs:comment>
+        <rdfs:label xml:lang="ca">Concepte &quot;Aliments&quot;</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#France -->
+
+    <owl:Class rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#France">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Country"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Spain"/>
+        <rdfs:comment>Concepte &quot;País Francés&quot;</rdfs:comment>
+        <rdfs:label xml:lang="ca">Concepte &quot;País Francés&quot;</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#Fruit -->
+
+    <owl:Class rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Fruit">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Food"/>
+        <rdfs:comment>Concepte &quot;Fruita&quot;</rdfs:comment>
+        <rdfs:label xml:lang="ca">Concepte &quot;Fruita&quot;</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#Full_bodied_wine -->
+
+    <owl:Class rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Full_bodied_wine">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Wine"/>
+        <rdfs:comment>Concepte &quot;Vi amb molt cos&quot;</rdfs:comment>
+        <rdfs:label xml:lang="ca">Concepte &quot;Vi amb molt cos&quot;</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#Grape -->
+
+    <owl:Class rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Grape">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Fruit"/>
+        <owl:disjointUnionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Red_grape"/>
+            <rdf:Description rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#White_grape"/>
+        </owl:disjointUnionOf>
+        <rdfs:comment xml:lang="ca">Concepte &quot;Raïm&quot;</rdfs:comment>
+        <rdfs:label xml:lang="ca">Concepte &quot;Raïm&quot;</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#Great_reserve_wine -->
+
+    <owl:Class rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Great_reserve_wine">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Wine"/>
+        <rdfs:comment>Concepte &quot;Vi gran reserva&quot;</rdfs:comment>
+        <rdfs:label xml:lang="ca">Concepte &quot;Vi gran reserva&quot;</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#High_acidity_wine -->
+
+    <owl:Class rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#High_acidity_wine">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Wine"/>
+        <rdfs:comment>Concepte &quot;Vi amb acidesa alta&quot;</rdfs:comment>
+        <rdfs:label xml:lang="ca">Concepte &quot;Vi amb acidesa alta&quot;</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#High_price -->
+
+    <owl:Class rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#High_price">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Vintage"/>
+        <rdfs:comment>Concepte &quot;Anyada del vi amb preu elevat&quot;</rdfs:comment>
+        <rdfs:label xml:lang="ca">Concepte &quot;Anyada del vi amb preu elevat&quot;</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#High_rated -->
+
+    <owl:Class rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#High_rated">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Vintage"/>
+        <rdfs:comment xml:lang="ca">Concepte &quot;Anyada del vi amb valoració alta&quot;</rdfs:comment>
+        <rdfs:label xml:lang="ca">Concepte &quot;Anyada del vi amb valoració alta&quot;</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#Light_bodied_wine -->
+
+    <owl:Class rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Light_bodied_wine">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Wine"/>
+        <rdfs:comment>Concepte &quot;Vi amb cos lleuger&quot;</rdfs:comment>
+        <rdfs:label xml:lang="ca">Concepte &quot;Vi amb cos lleuger&quot;</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#Low_acidity_wine -->
+
+    <owl:Class rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Low_acidity_wine">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Wine"/>
+        <rdfs:comment>Concepte &quot;Vi amb poca acidesa&quot;</rdfs:comment>
+        <rdfs:label xml:lang="ca">Concepte &quot;Vi amb poca acidesa&quot;</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#Low_price -->
+
+    <owl:Class rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Low_price">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Vintage"/>
+        <rdfs:comment>Concepte &quot;Anyada del vi amb preu baix&quot;</rdfs:comment>
+        <rdfs:label xml:lang="ca">Concepte &quot;Anyada del vi amb preu baix&quot;</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#Low_rated -->
+
+    <owl:Class rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Low_rated">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Vintage"/>
+        <rdfs:comment>Concepte &quot;Anyada del vi amb valoració baixa&quot;</rdfs:comment>
+        <rdfs:label xml:lang="ca">Concepte &quot;Anyada del vi amb valoració baixa&quot;</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#Meat -->
+
+    <owl:Class rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Meat">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Food"/>
+        <rdfs:comment>Concepte &quot;Carn&quot;</rdfs:comment>
+        <rdfs:label xml:lang="ca">Concepte &quot;Carn&quot;</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#Medium_acidity_wine -->
+
+    <owl:Class rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Medium_acidity_wine">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Wine"/>
+        <rdfs:comment>Concepte &quot;Vi amb acidesa mitjana&quot;</rdfs:comment>
+        <rdfs:label xml:lang="ca">Concepte &quot;Vi amb acidesa mitjana&quot;</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#Medium_bodied_wine -->
+
+    <owl:Class rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Medium_bodied_wine">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Wine"/>
+        <rdfs:comment>Concepte &quot;Vi amb cos mitjà&quot;</rdfs:comment>
+        <rdfs:label xml:lang="ca">Concepte &quot;Vi amb cos mitjà&quot;</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#Medium_price -->
+
+    <owl:Class rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Medium_price">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Vintage"/>
+        <rdfs:comment>Concepte &quot;Anyada del vi amb preu mitjà&quot;</rdfs:comment>
+        <rdfs:label xml:lang="ca">Concepte &quot;Anyada del vi amb preu mitjà&quot;</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#Medium_rated -->
+
+    <owl:Class rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Medium_rated">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Vintage"/>
+        <rdfs:comment xml:lang="ca">Concepte &quot;Anyada del vi amb valoració mitja&quot;</rdfs:comment>
+        <rdfs:label xml:lang="ca">Concepte &quot;Anyada del vi amb valoració mitja&quot;</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#Non_alcoholic_beberage -->
+
+    <owl:Class rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Non_alcoholic_beberage">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Beverage"/>
+        <rdfs:comment xml:lang="ca">Concepte &quot;Begudes no alcohòliques&quot;</rdfs:comment>
+        <rdfs:label xml:lang="ca">Concepte &quot;Begudes no alcohòliques&quot;</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#Non_carbonated_beberage -->
+
+    <owl:Class rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Non_carbonated_beberage">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Non_alcoholic_beberage"/>
+        <rdfs:comment>Concepte &quot;Begudes no carbonatades&quot;</rdfs:comment>
+        <rdfs:label xml:lang="ca">Concepte &quot;Begudes no carbonatades&quot;</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#Red_grape -->
+
+    <owl:Class rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Red_grape">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Grape"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#White_grape"/>
+        <rdfs:comment xml:lang="ca">Concepte &quot;Raïm negre&quot;</rdfs:comment>
+        <rdfs:label xml:lang="ca">Concepte &quot;Raïm negre&quot;</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#Red_wine -->
+
+    <owl:Class rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Red_wine">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Wine"/>
+        <rdfs:comment xml:lang="ca">Concepte &quot;Vi negre&quot;</rdfs:comment>
+        <rdfs:label xml:lang="ca">Concepte &quot;Vi negre&quot;</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#Reserve_wine -->
+
+    <owl:Class rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Reserve_wine">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Wine"/>
+        <rdfs:comment xml:lang="ca">Concepte &quot;Vi reserva&quot;</rdfs:comment>
+        <rdfs:label xml:lang="ca">Concepte &quot;Vi reserva&quot;</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#Rose_wine -->
+
+    <owl:Class rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Rose_wine">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Wine"/>
+        <rdfs:comment xml:lang="ca">Concepte &quot;Vi rosat&quot;</rdfs:comment>
+        <rdfs:label xml:lang="ca">Concepte &quot;Vi rosat&quot;</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#Spain -->
+
+    <owl:Class rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Spain">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Country"/>
+        <rdfs:comment xml:lang="ca">Concepte &quot;País espanyol&quot;</rdfs:comment>
+        <rdfs:label xml:lang="ca">Concepte &quot;País espanyol&quot;</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#Sparkling_wine -->
+
+    <owl:Class rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Sparkling_wine">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Wine"/>
+        <rdfs:comment xml:lang="ca">Concepte &quot;Vi espumós&quot;</rdfs:comment>
+        <rdfs:label xml:lang="ca">Concepte &quot;Vi espumós&quot;</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#Vegetables -->
+
+    <owl:Class rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Vegetables">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Food"/>
+        <rdfs:comment>Concepte &quot;Verdures&quot;</rdfs:comment>
+        <rdfs:label xml:lang="ca">Concepte &quot;Verdures&quot;</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#Vintage -->
+
+    <owl:Class rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Vintage">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#has_vintage_year"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Vintage"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#vintage_of"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Wine"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#has_number_reviews"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#has_price"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#has_rating"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="ca">Concepte &quot;Anyada del vi&quot;</rdfs:comment>
+        <rdfs:label xml:lang="ca">Concepte &quot;Anyada del vi&quot;</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#Vintage_year -->
+
+    <owl:Class rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Vintage_year">
+        <rdfs:comment>Concepte &quot;Anyada&quot;</rdfs:comment>
+        <rdfs:label xml:lang="ca">Concepte &quot;Anyada&quot;</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#Vodka -->
+
+    <owl:Class rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Vodka">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Destilated_alcoholic_beberage"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Whisky"/>
+        <rdfs:comment>Concepte &quot;Vodka&quot;</rdfs:comment>
+        <rdfs:label xml:lang="ca">Concepte &quot;Vodka&quot;</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#Whisky -->
+
+    <owl:Class rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Whisky">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Destilated_alcoholic_beberage"/>
+        <rdfs:comment>Concepte &quot;Whisky&quot;</rdfs:comment>
+        <rdfs:label xml:lang="ca">Concepte &quot;Whisky&quot;</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#White_grape -->
+
+    <owl:Class rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#White_grape">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Grape"/>
+        <rdfs:comment xml:lang="ca">Concepte &quot;Raïm blanc&quot;</rdfs:comment>
+        <rdfs:label xml:lang="ca">Concepte &quot;Raïm blanc&quot;</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#White_wine -->
+
+    <owl:Class rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#White_wine">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Wine"/>
+        <rdfs:comment xml:lang="ca">Concepte &quot;Vi blanc&quot;</rdfs:comment>
+        <rdfs:label xml:lang="ca">Concepte &quot;Vi blanc&quot;</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#Wine -->
+
+    <owl:Class rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Wine">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Fermentatated_alcoholic_beberage"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#produced_by"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Winery"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#has_grape"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Grape"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#has_acidity"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#has_body"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="ca">concepte &quot;Vi&quot;</rdfs:comment>
+        <rdfs:label xml:lang="ca">concepte &quot;Vi&quot;</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#Wine_region -->
+
+    <owl:Class rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Wine_region">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Spain"/>
+        <rdfs:comment xml:lang="ca">Concepte &quot;Regions vinícoles&quot;</rdfs:comment>
+        <rdfs:label xml:lang="ca">Concepte &quot;Regions vinícoles&quot;</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#Winery -->
+
+    <owl:Class rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Winery">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#is_region"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Wine_region"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="ca">Concepte &quot;Celler&quot;</rdfs:comment>
+        <rdfs:label xml:lang="ca">Concepte &quot;Celler&quot;</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#Young_wine -->
+
+    <owl:Class rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Young_wine">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Wine"/>
+        <rdfs:comment xml:lang="ca">Concepte &quot;Vi jove&quot;</rdfs:comment>
+        <rdfs:label xml:lang="ca">Concepte &quot;Vi jove&quot;</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#Allende -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Allende">
+        <rdf:type rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Winery"/>
+        <is_region rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Rioja"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#Bierzo -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Bierzo">
+        <rdf:type rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Wine_region"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#Bodegas_Gama -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Bodegas_Gama">
+        <rdf:type rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Winery"/>
+        <is_region rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Rioja"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#Cabernet_Sauvignon_Grape -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Cabernet_Sauvignon_Grape">
+        <rdf:type rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Red_grape"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#Calvario_Rioja -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Calvario_Rioja">
+        <rdf:type rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Wine"/>
+        <has_grape rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Rioja_Red_Grape"/>
+        <produced_by rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Allende"/>
+        <has_acidity rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</has_acidity>
+        <has_body rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4</has_body>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#Calvario_Rioja_2002 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Calvario_Rioja_2002">
+        <rdf:type rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Vintage"/>
+        <has_vintage_year rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#year_2002"/>
+        <vintage_of rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Calvario_Rioja"/>
+        <has_number_reviews rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">61</has_number_reviews>
+        <has_price rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">95</has_price>
+        <has_rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.5</has_rating>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#Calvario_Rioja_2004 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Calvario_Rioja_2004">
+        <rdf:type rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Vintage"/>
+        <has_vintage_year rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#year_2004"/>
+        <vintage_of rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Calvario_Rioja"/>
+        <has_number_reviews rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">150</has_number_reviews>
+        <has_price rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">90</has_price>
+        <has_rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.3</has_rating>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#Calvario_Rioja_2006 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Calvario_Rioja_2006">
+        <rdf:type rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Vintage"/>
+        <has_vintage_year rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#year_2006"/>
+        <vintage_of rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Calvario_Rioja"/>
+        <has_number_reviews rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">279</has_number_reviews>
+        <has_price rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">53.35</has_price>
+        <has_rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.3</has_rating>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#Calvario_Rioja_2008 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Calvario_Rioja_2008">
+        <rdf:type rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Vintage"/>
+        <has_vintage_year rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#year_2008"/>
+        <vintage_of rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Calvario_Rioja"/>
+        <has_number_reviews rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">195</has_number_reviews>
+        <has_price rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">87.3</has_price>
+        <has_rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.4</has_rating>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#Calvario_Rioja_2009 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Calvario_Rioja_2009">
+        <rdf:type rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Vintage"/>
+        <has_vintage_year rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#year_2009"/>
+        <vintage_of rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Calvario_Rioja"/>
+        <has_number_reviews rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">194</has_number_reviews>
+        <has_price rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">125.97</has_price>
+        <has_rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.5</has_rating>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#Calvario_Rioja_2010 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Calvario_Rioja_2010">
+        <rdf:type rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Vintage"/>
+        <has_vintage_year rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#year_2010"/>
+        <vintage_of rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Calvario_Rioja"/>
+        <has_number_reviews rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">92</has_number_reviews>
+        <has_price rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">125.97</has_price>
+        <has_rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.4</has_rating>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#Capitel -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Capitel">
+        <rdf:type rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Wine"/>
+        <has_grape rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Verdejo_Grape"/>
+        <produced_by rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Ossian"/>
+        <has_acidity rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</has_acidity>
+        <has_body rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</has_body>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#Capitel_2016 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Capitel_2016">
+        <rdf:type rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Vintage"/>
+        <has_vintage_year rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#year_2016"/>
+        <vintage_of rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Capitel"/>
+        <has_number_reviews rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">162</has_number_reviews>
+        <has_price rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">144.78</has_price>
+        <has_rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.5</has_rating>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#Capitel_2018 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Capitel_2018">
+        <rdf:type rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Vintage"/>
+        <has_vintage_year rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#year_2018"/>
+        <vintage_of rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Capitel"/>
+        <has_number_reviews rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">107</has_number_reviews>
+        <has_price rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">50.51</has_price>
+        <has_rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.6</has_rating>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#Castilla_y_León -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Castilla_y_León">
+        <rdf:type rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Wine_region"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#Castillo_Perelada -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Castillo_Perelada">
+        <rdf:type rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Winery"/>
+        <is_region rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Empordà"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#Cava -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Cava">
+        <rdf:type rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Wine_region"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#Cava_Grape -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Cava_Grape">
+        <rdf:type rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#White_grape"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#Empordà -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Empordà">
+        <rdf:type rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Wine_region"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#Familia_Torres -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Familia_Torres">
+        <rdf:type rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Winery"/>
+        <is_region rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Penedès"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#Finca_Garbet -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Finca_Garbet">
+        <rdf:type rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Wine"/>
+        <has_grape rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Syrah_Grape"/>
+        <produced_by rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Castillo_Perelada"/>
+        <has_acidity rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</has_acidity>
+        <has_body rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4</has_body>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#Finca_Garbet_2014 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Finca_Garbet_2014">
+        <rdf:type rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Vintage"/>
+        <has_vintage_year rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#year_2014"/>
+        <vintage_of rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Finca_Garbet"/>
+        <has_number_reviews rdf:datatype="http://www.w3.org/2001/XMLSchema#int">75</has_number_reviews>
+        <has_price rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">99</has_price>
+        <has_rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.6</has_rating>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#Finca_Garbet_2015 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Finca_Garbet_2015">
+        <rdf:type rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Vintage"/>
+        <has_vintage_year rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#year_2015"/>
+        <vintage_of rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Finca_Garbet"/>
+        <has_number_reviews rdf:datatype="http://www.w3.org/2001/XMLSchema#int">32</has_number_reviews>
+        <has_price rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">89.9</has_price>
+        <has_rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.5</has_rating>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#Frank_Ghery_Selection -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Frank_Ghery_Selection">
+        <rdf:type rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Wine"/>
+        <has_grape rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Tempranillo_Grape"/>
+        <produced_by rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Marqués_de_Riscal"/>
+        <has_acidity rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</has_acidity>
+        <has_body rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4</has_body>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#Frank_Ghery_Selection_2001 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Frank_Ghery_Selection_2001">
+        <rdf:type rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Vintage"/>
+        <has_vintage_year rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#year_2001"/>
+        <vintage_of rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Frank_Ghery_Selection"/>
+        <has_number_reviews rdf:datatype="http://www.w3.org/2001/XMLSchema#int">124</has_number_reviews>
+        <has_price rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">301</has_price>
+        <has_rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.6</has_rating>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#Gines_Liebana_Pedro_Ximenez -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Gines_Liebana_Pedro_Ximenez">
+        <rdf:type rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Wine"/>
+        <has_grape rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Pedro_Ximenez_Grape"/>
+        <produced_by rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Toro_Albala"/>
+        <has_acidity rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</has_acidity>
+        <has_body rdf:datatype="http://www.w3.org/2001/XMLSchema#int">5</has_body>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#Gines_Liebana_Pedro_Ximenez_1910 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Gines_Liebana_Pedro_Ximenez_1910">
+        <rdf:type rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Vintage"/>
+        <has_vintage_year rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#year_1910"/>
+        <vintage_of rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Gines_Liebana_Pedro_Ximenez"/>
+        <has_number_reviews rdf:datatype="http://www.w3.org/2001/XMLSchema#int">70</has_number_reviews>
+        <has_price rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">701.05</has_price>
+        <has_rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.6</has_rating>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#Grenache_Grape -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Grenache_Grape">
+        <rdf:type rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Red_grape"/>
+        <rdfs:sameAs>http://dbpedia.org/page/Grenache</rdfs:sameAs>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#Marqués_de_Riscal -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Marqués_de_Riscal">
+        <rdf:type rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Winery"/>
+        <is_region rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Rioja"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#Martiries_Rioja -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Martiries_Rioja">
+        <rdf:type rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Wine"/>
+        <has_grape rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Rioja_White_Grape"/>
+        <produced_by rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Allende"/>
+        <has_acidity rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</has_acidity>
+        <has_body rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</has_body>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#Martiries_Rioja_2015 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Martiries_Rioja_2015">
+        <rdf:type rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Vintage"/>
+        <has_vintage_year rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#year_2015"/>
+        <vintage_of rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Martiries_Rioja"/>
+        <has_number_reviews rdf:datatype="http://www.w3.org/2001/XMLSchema#int">50</has_number_reviews>
+        <has_price rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">91.5</has_price>
+        <has_rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.4</has_rating>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#Martiries_Rioja_2017 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Martiries_Rioja_2017">
+        <rdf:type rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Vintage"/>
+        <has_vintage_year rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#year_2017"/>
+        <vintage_of rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Martiries_Rioja"/>
+        <has_number_reviews rdf:datatype="http://www.w3.org/2001/XMLSchema#int">33</has_number_reviews>
+        <has_price rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">139.63</has_price>
+        <has_rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.4</has_rating>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#Mas_La_Plana_Cabernet_Sauvignon -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Mas_La_Plana_Cabernet_Sauvignon">
+        <rdf:type rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Wine"/>
+        <has_grape rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Cabernet_Sauvignon_Grape"/>
+        <produced_by rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Familia_Torres"/>
+        <has_acidity rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</has_acidity>
+        <has_body rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4</has_body>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#Mas_La_Plana_Cabernet_Sauvignon_2010 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Mas_La_Plana_Cabernet_Sauvignon_2010">
+        <rdf:type rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Vintage"/>
+        <has_vintage_year rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#year_2010"/>
+        <vintage_of rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Mas_La_Plana_Cabernet_Sauvignon"/>
+        <has_number_reviews rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2788</has_number_reviews>
+        <has_price rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">48.4</has_price>
+        <has_rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.2</has_rating>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#Mas_La_Plana_Cabernet_Sauvignon_2013 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Mas_La_Plana_Cabernet_Sauvignon_2013">
+        <rdf:type rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Vintage"/>
+        <has_vintage_year rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#year_2013"/>
+        <vintage_of rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Mas_La_Plana_Cabernet_Sauvignon"/>
+        <has_number_reviews rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2911</has_number_reviews>
+        <has_price rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">63.33</has_price>
+        <has_rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.3</has_rating>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#Mas_La_Plana_Cabernet_Sauvignon_2015 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Mas_La_Plana_Cabernet_Sauvignon_2015">
+        <rdf:type rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Vintage"/>
+        <has_vintage_year rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#year_2015"/>
+        <vintage_of rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Mas_La_Plana_Cabernet_Sauvignon"/>
+        <has_number_reviews rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1797</has_number_reviews>
+        <has_price rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">55</has_price>
+        <has_rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.2</has_rating>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#Mas_La_Plana_Cabernet_Sauvignon_2016 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Mas_La_Plana_Cabernet_Sauvignon_2016">
+        <rdf:type rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Vintage"/>
+        <has_vintage_year rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#year_2016"/>
+        <vintage_of rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Mas_La_Plana_Cabernet_Sauvignon"/>
+        <has_number_reviews rdf:datatype="http://www.w3.org/2001/XMLSchema#int">964</has_number_reviews>
+        <has_price rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">56.26</has_price>
+        <has_rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.2</has_rating>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#Montilla-Moriles -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Montilla-Moriles">
+        <rdf:type rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Wine_region"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#NV -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#NV">
+        <rdf:type rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Vintage_year"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#Octogenarius -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Octogenarius">
+        <rdf:type rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Wine"/>
+        <has_grape rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Grenache_Grape"/>
+        <produced_by rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Bodegas_Gama"/>
+        <has_acidity rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</has_acidity>
+        <has_body rdf:datatype="http://www.w3.org/2001/XMLSchema#int">5</has_body>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#Octogenarius_2014 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Octogenarius_2014">
+        <rdf:type rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Vintage"/>
+        <has_vintage_year rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#year_2014"/>
+        <vintage_of rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Octogenarius"/>
+        <has_number_reviews rdf:datatype="http://www.w3.org/2001/XMLSchema#int">34</has_number_reviews>
+        <has_price rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">46.5</has_price>
+        <has_rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.3</has_rating>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#Octogenarius_2015 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Octogenarius_2015">
+        <rdf:type rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Vintage"/>
+        <has_vintage_year rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#year_2015"/>
+        <vintage_of rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Octogenarius"/>
+        <has_number_reviews rdf:datatype="http://www.w3.org/2001/XMLSchema#int">25</has_number_reviews>
+        <has_price rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">36.9</has_price>
+        <has_rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.3</has_rating>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#Ossian -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Ossian">
+        <rdf:type rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Winery"/>
+        <is_region rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Castilla_y_León"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#Pedro_Ximenez_Grape -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Pedro_Ximenez_Grape">
+        <rdf:type rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#White_grape"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#Penedès -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Penedès">
+        <rdf:type rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Wine_region"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#Recaredo -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Recaredo">
+        <rdf:type rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Winery"/>
+        <is_region rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Cava"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#Reserva_Particular_de_Recaredo_Brut_Nature -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Reserva_Particular_de_Recaredo_Brut_Nature">
+        <rdf:type rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Wine"/>
+        <has_grape rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Cava_Grape"/>
+        <produced_by rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Recaredo"/>
+        <has_acidity rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</has_acidity>
+        <has_body rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</has_body>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#Reserva_Particular_de_Recaredo_Brut_Nature_2008 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Reserva_Particular_de_Recaredo_Brut_Nature_2008">
+        <rdf:type rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Vintage"/>
+        <has_vintage_year rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#year_2008"/>
+        <vintage_of rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Reserva_Particular_de_Recaredo_Brut_Nature"/>
+        <has_number_reviews rdf:datatype="http://www.w3.org/2001/XMLSchema#int">69</has_number_reviews>
+        <has_price rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">74.9</has_price>
+        <has_rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.6</has_rating>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#Reserva_Particular_de_Recaredo_Brut_Nature_2011 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Reserva_Particular_de_Recaredo_Brut_Nature_2011">
+        <rdf:type rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Vintage"/>
+        <has_vintage_year rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#year_2011"/>
+        <vintage_of rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Reserva_Particular_de_Recaredo_Brut_Nature"/>
+        <has_number_reviews rdf:datatype="http://www.w3.org/2001/XMLSchema#int">69</has_number_reviews>
+        <has_price rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">65.05</has_price>
+        <has_rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.7</has_rating>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#Reserva_Vermouth_Rojo -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Reserva_Vermouth_Rojo">
+        <rdf:type rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Wine"/>
+        <produced_by rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Vinos_Guerra"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#Reserva_Vermouth_Rojo_NV -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Reserva_Vermouth_Rojo_NV">
+        <rdf:type rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Vintage"/>
+        <has_vintage_year rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#NV"/>
+        <vintage_of rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Reserva_Vermouth_Rojo"/>
+        <has_number_reviews rdf:datatype="http://www.w3.org/2001/XMLSchema#int">166</has_number_reviews>
+        <has_price rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8.95</has_price>
+        <has_rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.3</has_rating>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#Rioja -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Rioja">
+        <rdf:type rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Wine_region"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#Rioja_Red_Grape -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Rioja_Red_Grape">
+        <rdf:type rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Red_grape"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#Rioja_White_Grape -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Rioja_White_Grape">
+        <rdf:type rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#White_grape"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#Serrall_del_Vell_Brut_Nature -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Serrall_del_Vell_Brut_Nature">
+        <rdf:type rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Wine"/>
+        <has_grape rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Cava_Grape"/>
+        <produced_by rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Recaredo"/>
+        <has_acidity rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</has_acidity>
+        <has_body rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</has_body>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#Serrall_del_Vell_Brut_Nature_2013 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Serrall_del_Vell_Brut_Nature_2013">
+        <rdf:type rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Vintage"/>
+        <has_vintage_year rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#year_2013"/>
+        <vintage_of rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Serrall_del_Vell_Brut_Nature"/>
+        <has_number_reviews rdf:datatype="http://www.w3.org/2001/XMLSchema#int">149</has_number_reviews>
+        <has_price rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">44.41</has_price>
+        <has_rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.3</has_rating>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#Serrall_del_Vell_Brut_Nature_2014 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Serrall_del_Vell_Brut_Nature_2014">
+        <rdf:type rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Vintage"/>
+        <has_vintage_year rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#year_2014"/>
+        <vintage_of rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Serrall_del_Vell_Brut_Nature"/>
+        <has_number_reviews rdf:datatype="http://www.w3.org/2001/XMLSchema#int">166</has_number_reviews>
+        <has_price rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">44.41</has_price>
+        <has_rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.4</has_rating>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#Serrall_del_Vell_Brut_Nature_2015 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Serrall_del_Vell_Brut_Nature_2015">
+        <rdf:type rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Vintage"/>
+        <has_vintage_year rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#year_2015"/>
+        <vintage_of rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Serrall_del_Vell_Brut_Nature"/>
+        <has_number_reviews rdf:datatype="http://www.w3.org/2001/XMLSchema#int">54</has_number_reviews>
+        <has_price rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">33.78</has_price>
+        <has_rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.4</has_rating>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#Serrall_del_Vell_Brut_Nature_2016 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Serrall_del_Vell_Brut_Nature_2016">
+        <rdf:type rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Vintage"/>
+        <has_vintage_year rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#year_2016"/>
+        <vintage_of rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Serrall_del_Vell_Brut_Nature"/>
+        <has_number_reviews rdf:datatype="http://www.w3.org/2001/XMLSchema#int">60</has_number_reviews>
+        <has_price rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">34.56</has_price>
+        <has_rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.4</has_rating>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#Syrah_Grape -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Syrah_Grape">
+        <rdf:type rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Red_grape"/>
+        <rdfs:sameAs>https://dbpedia.org/page/Syrah</rdfs:sameAs>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#Tempranillo_Grape -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Tempranillo_Grape">
+        <rdf:type rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Red_grape"/>
+        <rdfs:sameAs>https://dbpedia.org/page/Tempranillo</rdfs:sameAs>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#Toro_Albala -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Toro_Albala">
+        <rdf:type rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Winery"/>
+        <is_region rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Montilla-Moriles"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#Verdejo_Grape -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Verdejo_Grape">
+        <rdf:type rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#White_grape"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#Vinos_Guerra -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Vinos_Guerra">
+        <rdf:type rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Winery"/>
+        <is_region rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Bierzo"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#Viñas_Viejas_Verdejo -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Viñas_Viejas_Verdejo">
+        <rdf:type rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Wine"/>
+        <has_grape rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Verdejo_Grape"/>
+        <produced_by rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Ossian"/>
+        <has_acidity rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</has_acidity>
+        <has_body rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</has_body>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#Viñas_Viejas_Verdejo_2015 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Viñas_Viejas_Verdejo_2015">
+        <rdf:type rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Vintage"/>
+        <has_vintage_year rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#year_2015"/>
+        <vintage_of rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Viñas_Viejas_Verdejo"/>
+        <has_number_reviews rdf:datatype="http://www.w3.org/2001/XMLSchema#int">769</has_number_reviews>
+        <has_price rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">30</has_price>
+        <has_rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.2</has_rating>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#Viñas_Viejas_Verdejo_2016 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Viñas_Viejas_Verdejo_2016">
+        <rdf:type rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Vintage"/>
+        <has_vintage_year rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#year_2016"/>
+        <vintage_of rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Viñas_Viejas_Verdejo"/>
+        <has_number_reviews rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1181</has_number_reviews>
+        <has_price rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">49</has_price>
+        <has_rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.3</has_rating>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#Viñas_Viejas_Verdejo_2017 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Viñas_Viejas_Verdejo_2017">
+        <rdf:type rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Vintage"/>
+        <has_vintage_year rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#year_2017"/>
+        <vintage_of rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Viñas_Viejas_Verdejo"/>
+        <has_number_reviews rdf:datatype="http://www.w3.org/2001/XMLSchema#int">449</has_number_reviews>
+        <has_price rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">42</has_price>
+        <has_rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.3</has_rating>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#Viñas_Viejas_Verdejo_2018 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Viñas_Viejas_Verdejo_2018">
+        <rdf:type rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Vintage"/>
+        <has_vintage_year rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#year_2018"/>
+        <vintage_of rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Viñas_Viejas_Verdejo"/>
+        <has_number_reviews rdf:datatype="http://www.w3.org/2001/XMLSchema#int">885</has_number_reviews>
+        <has_price rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">28.18</has_price>
+        <has_rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.3</has_rating>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#Viñas_Viejas_Verdejo_2019 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Viñas_Viejas_Verdejo_2019">
+        <rdf:type rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Vintage"/>
+        <has_vintage_year rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#year_2019"/>
+        <vintage_of rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Viñas_Viejas_Verdejo"/>
+        <has_number_reviews rdf:datatype="http://www.w3.org/2001/XMLSchema#int">219</has_number_reviews>
+        <has_price rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">26.9</has_price>
+        <has_rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.4</has_rating>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#year_1910 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#year_1910">
+        <rdf:type rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Vintage_year"/>
+        <year_value rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1910</year_value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#year_2001 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#year_2001">
+        <rdf:type rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Vintage_year"/>
+        <year_value rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2001</year_value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#year_2002 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#year_2002">
+        <rdf:type rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Vintage_year"/>
+        <year_value rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2002</year_value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#year_2004 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#year_2004">
+        <rdf:type rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Vintage_year"/>
+        <year_value rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2004</year_value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#year_2006 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#year_2006">
+        <rdf:type rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Vintage_year"/>
+        <year_value rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2006</year_value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#year_2008 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#year_2008">
+        <rdf:type rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Vintage_year"/>
+        <year_value rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2008</year_value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#year_2009 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#year_2009">
+        <rdf:type rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Vintage_year"/>
+        <year_value rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2009</year_value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#year_2010 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#year_2010">
+        <rdf:type rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Vintage_year"/>
+        <year_value rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2010</year_value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#year_2011 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#year_2011">
+        <rdf:type rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Vintage_year"/>
+        <year_value rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2011</year_value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#year_2013 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#year_2013">
+        <rdf:type rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Vintage_year"/>
+        <year_value rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2013</year_value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#year_2014 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#year_2014">
+        <rdf:type rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Vintage_year"/>
+        <year_value rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2014</year_value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#year_2015 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#year_2015">
+        <rdf:type rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Vintage_year"/>
+        <year_value rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2015</year_value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#year_2016 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#year_2016">
+        <rdf:type rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Vintage_year"/>
+        <year_value rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2016</year_value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#year_2017 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#year_2017">
+        <rdf:type rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Vintage_year"/>
+        <year_value rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2017</year_value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#year_2018 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#year_2018">
+        <rdf:type rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Vintage_year"/>
+        <year_value rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2018</year_value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/spanish-wine-ontology-rarjonilla#year_2019 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#year_2019">
+        <rdf:type rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Vintage_year"/>
+        <year_value rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2019</year_value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Crianza_wine"/>
+            <rdf:Description rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Great_reserve_wine"/>
+            <rdf:Description rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Reserve_wine"/>
+            <rdf:Description rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Young_wine"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Fish"/>
+            <rdf:Description rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Fruit"/>
+            <rdf:Description rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Meat"/>
+            <rdf:Description rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Vegetables"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Full_bodied_wine"/>
+            <rdf:Description rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Light_bodied_wine"/>
+            <rdf:Description rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Medium_bodied_wine"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#High_acidity_wine"/>
+            <rdf:Description rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Low_acidity_wine"/>
+            <rdf:Description rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Medium_acidity_wine"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#High_price"/>
+            <rdf:Description rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Low_price"/>
+            <rdf:Description rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Medium_price"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#High_rated"/>
+            <rdf:Description rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Low_rated"/>
+            <rdf:Description rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Medium_rated"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Red_wine"/>
+            <rdf:Description rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Rose_wine"/>
+            <rdf:Description rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Sparkling_wine"/>
+            <rdf:Description rdf:about="https://w3id.org/def/spanish-wine-ontology-rarjonilla#White_wine"/>
+        </owl:members>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="urn:swrl:var#w">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#r">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#p">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#v">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#a">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#b">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#has_rating"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#v"/>
+                        <swrl:argument2 rdf:resource="urn:swrl:var#r"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Vintage"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#v"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="urn:swrl:var#r"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.6</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#High_rated"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#v"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThanOrEqual"/>
+                        <swrl:arguments>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first rdf:resource="urn:swrl:var#r"/>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.6</rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </swrl:arguments>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#has_rating"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#v"/>
+                                <swrl:argument2 rdf:resource="urn:swrl:var#r"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Vintage"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl:var#v"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"/>
+                                                <swrl:arguments>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:resource="urn:swrl:var#r"/>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.3</rdf:first>
+                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </swrl:arguments>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Medium_rated"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#v"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThan"/>
+                        <swrl:arguments>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first rdf:resource="urn:swrl:var#r"/>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.3</rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </swrl:arguments>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#has_rating"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#v"/>
+                                <swrl:argument2 rdf:resource="urn:swrl:var#r"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Vintage"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl:var#v"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Low_rated"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#v"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#has_grape"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#w"/>
+                        <swrl:argument2 rdf:resource="urn:swrl:var#r"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#White_grape"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#r"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Wine"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl:var#w"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#White_wine"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#w"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#equal"/>
+                        <swrl:arguments>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first rdf:resource="urn:swrl:var#a"/>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </swrl:arguments>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#has_acidity"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#w"/>
+                                <swrl:argument2 rdf:resource="urn:swrl:var#a"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Wine"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl:var#w"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Low_acidity_wine"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#w"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#has_acidity"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#w"/>
+                        <swrl:argument2 rdf:resource="urn:swrl:var#a"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Wine"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#w"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#equal"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="urn:swrl:var#a"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Medium_acidity_wine"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#w"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#has_acidity"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#w"/>
+                        <swrl:argument2 rdf:resource="urn:swrl:var#a"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Wine"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#w"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#equal"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="urn:swrl:var#a"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#High_acidity_wine"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#w"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+                        <swrl:arguments>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first rdf:resource="urn:swrl:var#b"/>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </swrl:arguments>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Wine"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#w"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#has_body"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl:var#w"/>
+                                        <swrl:argument2 rdf:resource="urn:swrl:var#b"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Full_bodied_wine"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#w"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"/>
+                        <swrl:arguments>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first rdf:resource="urn:swrl:var#b"/>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </swrl:arguments>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Wine"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#w"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThanOrEqual"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="urn:swrl:var#b"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#has_body"/>
+                                                <swrl:argument1 rdf:resource="urn:swrl:var#w"/>
+                                                <swrl:argument2 rdf:resource="urn:swrl:var#b"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Medium_bodied_wine"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#w"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Wine"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#w"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThan"/>
+                                <swrl:arguments>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first rdf:resource="urn:swrl:var#b"/>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </swrl:arguments>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#has_body"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl:var#w"/>
+                                        <swrl:argument2 rdf:resource="urn:swrl:var#b"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Light_bodied_wine"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#w"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#has_grape"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#w"/>
+                        <swrl:argument2 rdf:resource="urn:swrl:var#r"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Red_grape"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#r"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Wine"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl:var#w"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Red_wine"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#w"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+                        <swrl:arguments>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first rdf:resource="urn:swrl:var#p"/>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100</rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </swrl:arguments>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#has_price"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#v"/>
+                                <swrl:argument2 rdf:resource="urn:swrl:var#p"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Vintage"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl:var#v"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#High_price"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#v"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"/>
+                        <swrl:arguments>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first rdf:resource="urn:swrl:var#p"/>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">50</rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </swrl:arguments>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#has_price"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#v"/>
+                                <swrl:argument2 rdf:resource="urn:swrl:var#p"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThanOrEqual"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="urn:swrl:var#p"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                <swrl:classPredicate rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Vintage"/>
+                                                <swrl:argument1 rdf:resource="urn:swrl:var#v"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Medium_price"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#v"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThan"/>
+                        <swrl:arguments>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first rdf:resource="urn:swrl:var#p"/>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">50</rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </swrl:arguments>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#has_price"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#v"/>
+                                <swrl:argument2 rdf:resource="urn:swrl:var#p"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Vintage"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl:var#v"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="https://w3id.org/def/spanish-wine-ontology-rarjonilla#Low_price"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#v"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+
