@@ -1,0 +1,236 @@
+{
+  "@context" : {
+    "Non_carbonated_beberage" : {
+      "@id" : "https://w3id.org/def/rarjonilla-spanish-wine-ontology#Non_carbonated_beberage"
+    },
+    "Young_wine" : {
+      "@id" : "https://w3id.org/def/rarjonilla-spanish-wine-ontology#Young_wine"
+    },
+    "creationDate" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#creationDate"
+    },
+    "Non_alcoholic_beberage" : {
+      "@id" : "https://w3id.org/def/rarjonilla-spanish-wine-ontology#Non_alcoholic_beberage"
+    },
+    "High_acidity_wine" : {
+      "@id" : "https://w3id.org/def/rarjonilla-spanish-wine-ontology#High_acidity_wine"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "Vodka" : {
+      "@id" : "https://w3id.org/def/rarjonilla-spanish-wine-ontology#Vodka"
+    },
+    "Winery" : {
+      "@id" : "https://w3id.org/def/rarjonilla-spanish-wine-ontology#Winery"
+    },
+    "Low_rated" : {
+      "@id" : "https://w3id.org/def/rarjonilla-spanish-wine-ontology#Low_rated"
+    },
+    "Whisky" : {
+      "@id" : "https://w3id.org/def/rarjonilla-spanish-wine-ontology#Whisky"
+    },
+    "Fish" : {
+      "@id" : "https://w3id.org/def/rarjonilla-spanish-wine-ontology#Fish"
+    },
+    "Country" : {
+      "@id" : "https://w3id.org/def/rarjonilla-spanish-wine-ontology#Country"
+    },
+    "Food" : {
+      "@id" : "https://w3id.org/def/rarjonilla-spanish-wine-ontology#Food"
+    },
+    "topDataProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+    },
+    "Meat" : {
+      "@id" : "https://w3id.org/def/rarjonilla-spanish-wine-ontology#Meat"
+    },
+    "Medium_rated" : {
+      "@id" : "https://w3id.org/def/rarjonilla-spanish-wine-ontology#Medium_rated"
+    },
+    "is_region" : {
+      "@id" : "https://w3id.org/def/rarjonilla-spanish-wine-ontology#is_region",
+      "@type" : "@id"
+    },
+    "Crianza_wine" : {
+      "@id" : "https://w3id.org/def/rarjonilla-spanish-wine-ontology#Crianza_wine"
+    },
+    "Great_reserve_wine" : {
+      "@id" : "https://w3id.org/def/rarjonilla-spanish-wine-ontology#Great_reserve_wine"
+    },
+    "Fruit" : {
+      "@id" : "https://w3id.org/def/rarjonilla-spanish-wine-ontology#Fruit"
+    },
+    "White_grape" : {
+      "@id" : "https://w3id.org/def/rarjonilla-spanish-wine-ontology#White_grape"
+    },
+    "High_rated" : {
+      "@id" : "https://w3id.org/def/rarjonilla-spanish-wine-ontology#High_rated"
+    },
+    "Low_price" : {
+      "@id" : "https://w3id.org/def/rarjonilla-spanish-wine-ontology#Low_price"
+    },
+    "White_wine" : {
+      "@id" : "https://w3id.org/def/rarjonilla-spanish-wine-ontology#White_wine"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "author" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#author"
+    },
+    "Vintage" : {
+      "@id" : "https://w3id.org/def/rarjonilla-spanish-wine-ontology#Vintage"
+    },
+    "has_wineries" : {
+      "@id" : "https://w3id.org/def/rarjonilla-spanish-wine-ontology#has_wineries",
+      "@type" : "@id"
+    },
+    "Beer" : {
+      "@id" : "https://w3id.org/def/rarjonilla-spanish-wine-ontology#Beer"
+    },
+    "Red_wine" : {
+      "@id" : "https://w3id.org/def/rarjonilla-spanish-wine-ontology#Red_wine"
+    },
+    "Alcoholic_beberage" : {
+      "@id" : "https://w3id.org/def/rarjonilla-spanish-wine-ontology#Alcoholic_beberage"
+    },
+    "has_grape" : {
+      "@id" : "https://w3id.org/def/rarjonilla-spanish-wine-ontology#has_grape",
+      "@type" : "@id"
+    },
+    "Vegetables" : {
+      "@id" : "https://w3id.org/def/rarjonilla-spanish-wine-ontology#Vegetables"
+    },
+    "Beverage" : {
+      "@id" : "https://w3id.org/def/rarjonilla-spanish-wine-ontology#Beverage"
+    },
+    "has_acidity" : {
+      "@id" : "https://w3id.org/def/rarjonilla-spanish-wine-ontology#has_acidity"
+    },
+    "creator" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#creator"
+    },
+    "Rose_wine" : {
+      "@id" : "https://w3id.org/def/rarjonilla-spanish-wine-ontology#Rose_wine"
+    },
+    "has_body" : {
+      "@id" : "https://w3id.org/def/rarjonilla-spanish-wine-ontology#has_body"
+    },
+    "Grape" : {
+      "@id" : "https://w3id.org/def/rarjonilla-spanish-wine-ontology#Grape"
+    },
+    "has_price" : {
+      "@id" : "https://w3id.org/def/rarjonilla-spanish-wine-ontology#has_price",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "vintages" : {
+      "@id" : "https://w3id.org/def/rarjonilla-spanish-wine-ontology#vintages",
+      "@type" : "@id"
+    },
+    "has_rating" : {
+      "@id" : "https://w3id.org/def/rarjonilla-spanish-wine-ontology#has_rating"
+    },
+    "France" : {
+      "@id" : "https://w3id.org/def/rarjonilla-spanish-wine-ontology#France"
+    },
+    "Sparkling_wine" : {
+      "@id" : "https://w3id.org/def/rarjonilla-spanish-wine-ontology#Sparkling_wine"
+    },
+    "produced_by" : {
+      "@id" : "https://w3id.org/def/rarjonilla-spanish-wine-ontology#produced_by",
+      "@type" : "@id"
+    },
+    "Vintage_year" : {
+      "@id" : "https://w3id.org/def/rarjonilla-spanish-wine-ontology#Vintage_year"
+    },
+    "Low_acidity_wine" : {
+      "@id" : "https://w3id.org/def/rarjonilla-spanish-wine-ontology#Low_acidity_wine"
+    },
+    "Fermentatated_alcoholic_beberage" : {
+      "@id" : "https://w3id.org/def/rarjonilla-spanish-wine-ontology#Fermentatated_alcoholic_beberage"
+    },
+    "Medium_bodied_wine" : {
+      "@id" : "https://w3id.org/def/rarjonilla-spanish-wine-ontology#Medium_bodied_wine"
+    },
+    "Destilated_alcoholic_beberage" : {
+      "@id" : "https://w3id.org/def/rarjonilla-spanish-wine-ontology#Destilated_alcoholic_beberage"
+    },
+    "has_number_reviews" : {
+      "@id" : "https://w3id.org/def/rarjonilla-spanish-wine-ontology#has_number_reviews",
+      "@type" : "http://www.w3.org/2001/XMLSchema#int"
+    },
+    "High_price" : {
+      "@id" : "https://w3id.org/def/rarjonilla-spanish-wine-ontology#High_price"
+    },
+    "Light_bodied_wine" : {
+      "@id" : "https://w3id.org/def/rarjonilla-spanish-wine-ontology#Light_bodied_wine"
+    },
+    "produces" : {
+      "@id" : "https://w3id.org/def/rarjonilla-spanish-wine-ontology#produces",
+      "@type" : "@id"
+    },
+    "title" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#title"
+    },
+    "vintage_of" : {
+      "@id" : "https://w3id.org/def/rarjonilla-spanish-wine-ontology#vintage_of",
+      "@type" : "@id"
+    },
+    "Medium_price" : {
+      "@id" : "https://w3id.org/def/rarjonilla-spanish-wine-ontology#Medium_price"
+    },
+    "Spain" : {
+      "@id" : "https://w3id.org/def/rarjonilla-spanish-wine-ontology#Spain"
+    },
+    "Full_bodied_wine" : {
+      "@id" : "https://w3id.org/def/rarjonilla-spanish-wine-ontology#Full_bodied_wine"
+    },
+    "has_vintage_year" : {
+      "@id" : "https://w3id.org/def/rarjonilla-spanish-wine-ontology#has_vintage_year",
+      "@type" : "@id"
+    },
+    "year_value" : {
+      "@id" : "https://w3id.org/def/rarjonilla-spanish-wine-ontology#year_value",
+      "@type" : "http://www.w3.org/2001/XMLSchema#gYear"
+    },
+    "Medium_acidity_wine" : {
+      "@id" : "https://w3id.org/def/rarjonilla-spanish-wine-ontology#Medium_acidity_wine"
+    },
+    "sameAs" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#sameAs"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "Wine_region" : {
+      "@id" : "https://w3id.org/def/rarjonilla-spanish-wine-ontology#Wine_region"
+    },
+    "has_wine_descriptor" : {
+      "@id" : "https://w3id.org/def/rarjonilla-spanish-wine-ontology#has_wine_descriptor"
+    },
+    "vintages_of_year" : {
+      "@id" : "https://w3id.org/def/rarjonilla-spanish-wine-ontology#vintages_of_year",
+      "@type" : "@id"
+    },
+    "Reserve_wine" : {
+      "@id" : "https://w3id.org/def/rarjonilla-spanish-wine-ontology#Reserve_wine"
+    },
+    "grape_used_for" : {
+      "@id" : "https://w3id.org/def/rarjonilla-spanish-wine-ontology#grape_used_for",
+      "@type" : "@id"
+    },
+    "has_vintage" : {
+      "@id" : "https://w3id.org/def/rarjonilla-spanish-wine-ontology#has_vintage"
+    },
+    "Red_grape" : {
+      "@id" : "https://w3id.org/def/rarjonilla-spanish-wine-ontology#Red_grape"
+    },
+    "Carbonated_beverage" : {
+      "@id" : "https://w3id.org/def/rarjonilla-spanish-wine-ontology#Carbonated_beverage"
+    },
+    "Wine" : {
+      "@id" : "https://w3id.org/def/rarjonilla-spanish-wine-ontology#Wine"
+    }
+  }
+}
